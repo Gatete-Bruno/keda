@@ -3,7 +3,7 @@ apiVersion: http.keda.sh/v1alpha1
 metadata:
     name: nginx-http-scaledobject
 spec:
-    host: myhost.com
+    host: http://192.168.1.60:30661/
     targetPendingRequests: 1
     scaleTargetRef:
         deployment: nginx
